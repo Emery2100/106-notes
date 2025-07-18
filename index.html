@@ -1,17 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/app.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Welcome to 106</h1>
+    <main>
+
+        <section class="list"> A </section>
+
+        <section id="form" class="row mb-3">
+            <div class="mb-3">
+                <label class="form-label">Title</label>
+                <input type="text" class="form-control" id="txtTitle" placeholder="Title">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Description</label>
+                <textarea rows="4" class="form-control" id="txtDescription" placeholder="Description"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="exampleColorInput" class="form-label">Color</label>
+                <input type="color" class="form-control form-control-color" id="selColor" value="#563d7c"
+                    placeholder="Color">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Start Date</label>
+                <input type="datetime-local" class="form-control" id="selDate" placeholder="Start Date">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Status</label>
+                <select class="form-control" id="selStatus" placeholder="Status">
+                    <option>New</option>
+                    <option>In progress</option>
+                    <option>Complete</option>
+                    <option>Cancelled</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Budget</label>
+                <input type="number" class="form-control" id="numBudget" placeholder="Budget">
+            </div>
+            <div>
+                <button class="btn btn-dark" id="btnSave">Submit</button>
+            </div>
+
+        </section>
+
+    </main>
 
 
-
-
-
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="./scripts/app.js"></script>
 </body>
+
 </html>

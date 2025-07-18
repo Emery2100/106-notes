@@ -1,0 +1,61 @@
+/* divide screen into sections using flex */
+
+body {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.list,
+#form {
+  flex: 1 1 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.list {
+  background-color: red;
+  color: #fff;
+}
+
+#form {
+  background-color: orange;
+  color: #000;
+}
+
+#form .form-label {
+  font-weight: 600;
+  color: #333;
+}
+
+#btnSave {
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+
+/* tablet view */
+
+@media (max-width: 768px) {
+  .list,
+  #form {
+    flex: 1 1 100%;
+    min-height: 50vh;
+  }
+}
