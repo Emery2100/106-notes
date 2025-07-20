@@ -1,11 +1,29 @@
 /* divide screen into sections using flex */
+.task{
+  margin: 10px 20x;
+  padding: 10px;
+  display: flex;
+  border: 2px solid gray;
+}
+
+.task .info{
+  flex: 3;
+}
+
+.task .status{
+  flex: 1;
+}
+
+.task .date-budget{
+  flex: 1;
+}
 
 body {
-  background-color: #ffffff;
-  border: 1px solid #ddd;
+  background-color: white;
+  border: 1px solid lightblue;
   border-radius: 12px;
   padding: 25px;
-  box-sizing: border-box;
+  
 }
 
 main{
@@ -21,26 +39,23 @@ main{
 #form {
   flex: 1 1 50%;
   padding: 20px;
-  box-sizing: border-box;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+
 }
 
 .list {
   background-color: red;
-  color: #fff;
+  color: white;
 }
 
 #form {
   background-color: orange;
-  color: #000;
+  color: black;
 }
 
 #form .form-label {
   font-weight: 600;
-  color: #333;
+  color: gray;
 }
 
 #btnSave {
